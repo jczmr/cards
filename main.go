@@ -4,5 +4,8 @@ func main() {
 
 	cards := newDeck()
 
-	cards.Println()
+	hand, remaininCards := deal(cards, 5)
+
+	hand.Println()
+	remaininCards.Println()
 }
